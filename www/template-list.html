@@ -1,0 +1,13 @@
+<div ng-controller="PlaneListCtrl">
+<div class="topcoat-list list">
+        <h3 class="topcoat-list__header">Select a plane (showing {{ planes.length }})</h3>
+        <ul class="topcoat-list__container">
+            <li ng-repeat="plane in planes">
+                <a href="#{{ plane.id }}">
+                    <h4>{{ plane.model }}</h4>
+                    <p>{{ plane.reg }}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
